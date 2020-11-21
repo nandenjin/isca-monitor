@@ -5,10 +5,18 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "push": "clasp push"
+    "push": "clasp push",
+    "lint": "eslint . --ext js,ts",
+    "lintfix": "eslint . --ext js,ts --fix",
+    "format": "prettier --write \"**/*.{ts,json}\""
   },
   "devDependencies": {
     "@google/clasp": "^2.3.0",
-    "@types/google-apps-script": "^1.0.17"
+    "@types/google-apps-script": "^1.0.17",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "prettier": "^2.2.0"
   }
 }
