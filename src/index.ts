@@ -6,7 +6,7 @@ interface Vote {
   num: number
 }
 
-function main(): void {
+export function main(): void {
   const res = UrlFetchApp.fetch(
     'https://kc-i.jp/activity/award/isca/2020/db/db_get.php'
   )
